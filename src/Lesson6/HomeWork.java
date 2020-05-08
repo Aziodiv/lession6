@@ -1,4 +1,8 @@
-public class Lession_6_Student {
+package Lesson6;
+
+import data.Student;
+
+public class HomeWork {
     public static void main(String[] args) {
 
         //primite type

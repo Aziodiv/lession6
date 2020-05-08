@@ -1,4 +1,9 @@
-public class Lession_6_Animal {
+package Lesson6;
+
+import data.Animal;
+import enums.Gender;
+
+public class ClassWork {
     public static void main(String[] args) {
 //// 0 eto cat
         Animal zebra = new Animal("gop", 20, "zebra", Gender.FEMALE);

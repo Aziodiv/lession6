@@ -1,3 +1,5 @@
+package data;
+
 public class Student {
 
     public Student() {
@@ -18,12 +20,12 @@ public class Student {
     }
 
 
-    int age;
-    String firstName;
-    String lastName;
-    String email;
-    String group;
-    long idCode;
+    public int age;
+    public String firstName;
+    public String lastName;
+    public String email;
+    public String group;
+    public long idCode;
 
     public void changeGroup(String newGroup) {
         this.group = newGroup;
