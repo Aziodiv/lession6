@@ -12,9 +12,9 @@ public class Animal {
         this.gender = gender;
     }
 
-    public final String name;
-    public final Gender gender;
-    public String kind;
-    public int age;
+    private final String name;
+    private final Gender gender;
+    private String kind;
+    private int age;
 
 }

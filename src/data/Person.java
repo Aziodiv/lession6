@@ -1,4 +1,4 @@
-package Lesson8;
+package data;
 
 public class Person {
 
@@ -18,19 +18,24 @@ public class Person {
         return this.age;
     }
 
-    public void newAge (int newAge) {
+    public void newAge(int newAge) {
         this.age = newAge;
 
     }
-
-    public String getFirstName() {
-        return this.firstName;
-
-    }
-
 
     public void setAge(int newAge) {
         this.age = newAge;
     }
+
+    public String getFirstName() {
+        return this.firstName;
+    }
+    public void setFirstName(String newFirstName){
+        this.firstName=newFirstName;
+    }
+
+
+
 }
+
 
