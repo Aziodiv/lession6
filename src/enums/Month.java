@@ -18,10 +18,15 @@ public enum Month {
     Month(String mseason) {
         this.mseason = mseason;
     }
-
-
     public String mseason;
+
+    public void printSeason(){
+        System.out.println(this.mseason);
+    }
+
 }
+
+
 
 
 ////2. Sozdat Enum kotorij soderjit mesjacy,

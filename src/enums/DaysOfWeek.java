@@ -5,13 +5,20 @@ public enum DaysOfWeek {
     MONDAY(true);
 
 
-    DaysOfWeek(boolean isWorkingDay){
-        this.isWorkingDay=isWorkingDay;
+    DaysOfWeek(boolean isWorkingDay) {
+        this.isWorkingDay = isWorkingDay;
 
     }
 
+///getter setter///
+   private boolean isWorkingDay;
 
-    boolean isWorkingDay;
+    public boolean getWorkingDay() {
+        return isWorkingDay;
+    }
 
+    public void setWorkingDay(boolean workingDay){
+        this.isWorkingDay = workingDay;
+    }
 
 }

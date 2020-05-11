@@ -16,20 +16,18 @@ public class ClassWork {
 
     public static Animal getOldestAnimal(Animal[] zoo) {
         int maxAgeIndex = 0;
-
-
         for (int j = 1; j < zoo.length; j++) {
             Animal maxAgeAnimal = zoo[maxAgeIndex];//max vozrast
             Animal current = zoo[j];   //tekuwee zivotnoe
-            if (current.age > maxAgeAnimal.age) {
+            if (current.getAge() > maxAgeAnimal.getAge()) {
 
                 maxAgeIndex = j;
             }
 
         }
         Animal oldestAnimal = zoo[maxAgeIndex];
-        System.out.println("Max name: " + oldestAnimal.name);
-        System.out.println("Max age: " + oldestAnimal.age);
+        System.out.println("Max name: " + oldestAnimal.getName());
+        System.out.println("Max age: " + oldestAnimal.getAge());
         return oldestAnimal;
     }
 }

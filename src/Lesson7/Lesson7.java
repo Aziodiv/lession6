@@ -1,10 +1,16 @@
-/*package Lesson7;
+package Lesson7;
+import data.Animal;
+import enums.DaysOfWeek;
+import enums.Gender;
+import utils.MyConstants;
 
 public class Lesson7 {
     //Constants:
-    public static void main(String[] args) {/*
+    public static void main(String[] args) {
+
+
         Animal lion = new Animal("leo", 29, "lion", Gender.MALE);
-        MyConstants.ZEBRA.age=9;
+
 
         Lesson7 instance = new Lesson7();
         instance.myMeth();
@@ -15,8 +21,8 @@ public class Lesson7 {
 
         MyConstants.myMethSt();
 
-        System.out.println(DaysOfWeek.MONDAY.isWorkingDay);
-        System.out.println(DaysOfWeek.SUNDAY.isWorkingDay);
+        System.out.println(DaysOfWeek.MONDAY.getWorkingDay());
+        System.out.println(DaysOfWeek.SUNDAY.getWorkingDay());
     }
 
     public void myMeth(){
@@ -26,4 +32,3 @@ public class Lesson7 {
 
 
 }
-*/

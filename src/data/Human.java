@@ -1,14 +1,4 @@
-package Practice;
-
-public class Huuman {
-    public static void main(String[] args) {
-        Human human1 = new Human();
-        human1.setAge(20);
-        human1.setName("Zorik");
-        human1.getInfo();
-    }
-
-}
+package data;
 
 class Human{
     String name;

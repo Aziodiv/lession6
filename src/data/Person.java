@@ -18,11 +18,6 @@ public class Person {
         return this.age;
     }
 
-    public void newAge(int newAge) {
-        this.age = newAge;
-
-    }
-
     public void setAge(int newAge) {
         this.age = newAge;
     }

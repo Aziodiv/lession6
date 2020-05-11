@@ -1,6 +1,7 @@
-/*package Lesson7;
 
-import enumm.Month;
+package Lesson7;
+
+import enums.Month;
 
 public class HomeWork7 {
 
@@ -31,7 +32,7 @@ public class HomeWork7 {
         int count = 0;
         for (int i = 0; i < monthes.length; i++) {
             int result;
-            if (monthes[i].season == "summer") {
+            if (monthes[i].mseason == "summer") {
                 count++;
             }
             return 5;
@@ -40,4 +41,3 @@ public class HomeWork7 {
     }
 }
 
- */

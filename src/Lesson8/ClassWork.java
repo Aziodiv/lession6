@@ -5,7 +5,6 @@ import data.Person;
 import data.SimpleTriangle;
 import data.Student;
 import enums.Month;
-import sun.nio.cs.ext.MacRoman;
 
 public class ClassWork {
 
