@@ -35,5 +35,12 @@ public class HomeWork1 {
         int number1 = number / 10;
         int number2 = number % 10;
         System.out.println(number + " = " + number1 + " + " + number2);
+
+
     }
+
+
+
+
+
 }

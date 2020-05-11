@@ -1,6 +1,6 @@
 package Lesson8;
 
-import data.Car;
+//import data.Car;
 import data.Person;
 import data.SimpleTriangle;
 import data.Student;
@@ -15,7 +15,7 @@ public class ClassWork {
         Month month1 = Month.JANUARY;
         Student student = new Student("Robert");
 
-        Car car = new Car();
+ //       Car car = new Car();
 
         Person person = new Person(40, "Robert");
         System.out.println("Age" + person.getAge());

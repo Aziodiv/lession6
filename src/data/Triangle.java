@@ -11,18 +11,52 @@ package data;
 //4 * Dobavit v class Triangle validacijy (constructor, setters);
 
 
-
 public class Triangle {
-    private Point a;
-    private Point b;
+
+    //
+    private Point a; //(1;1)
+    private Point b;//
     private Point c;
 
-
-
-    public int getPerimetr(int a,int b, int c) {
-        return a + b + c;
-
+    //konstruktor
+    public Triangle(Point a, Point b, Point c) {
+        checkIntegrity(a, b, c);
+        this.a = a;
+        this.b = b;
+        this.c = c;
     }
 
+    //metod vozvrowaet summu dlinn vseh storon
+    public double getPerimetr() {
+        double result = 0.0;
+        double ab = getDistance(a, b);
+        double bc = getDistance(b, c);
+        double ac = getDistance(a, c);
+
+        return ab + bc + ac;
+
+
+    }
+    //proverka(peredajom 3 storoni i scitaem distanciju)
+
+    private void checkIntegrity(Point a, Point b, Point c) {
+
+        double ab = getDistance(a, b);
+        double bc = getDistance(b, c);
+        double ac = getDistance(a, c);
+
+        if (ab + bc < ac||bc + ac < ab||bc + ac < bc) {
+            throw new IllegalArgumentException("Invalid sides");
+        }
+    }
+
+
+    //formula na dekartovoi sisteme koordinat
+    private double getDistance(Point p1, Point p2) {
+        int xKatet = p2.getX() - p1.getX();
+        int yKatet = p2.getY() - p1.getX();
+
+        return Math.sqrt(Math.pow(xKatet, 2) + Math.pow(yKatet, 2));
+    }
 
 }
