@@ -6,13 +6,16 @@ import static utils.MyUtils.getRandomFromRange;
 
 public class Auto {
 
-    private static final int MIN_WEIGHT= 1200;
-    private static  final int MAX_WEIGHT= 2500;
-    private static  final int MIN_PRICE= 5000;
-    private static  final int MAX_PRICE= 100000;
+    private static final int MIN_WEIGHT = 1200;
+    private static final int MAX_WEIGHT = 2500;
+
+    private static final int MIN_PRICE = 5000;
+    private static final int MAX_PRICE = 100000;
+
     private Color color;
     private int weight;
     private int price;
+
 
     public Auto() {
         this.color = getRandomColors();
@@ -21,9 +24,8 @@ public class Auto {
     }
 
     public Auto(Color color, int weight, int price) {
-       checkWeight(weight);
-       checkPrice(price);
-
+        checkWeight(weight);
+        checkPrice(price);
         this.color = color;
         this.weight = weight;
         this.price = price;
@@ -34,10 +36,9 @@ public class Auto {
         final Color[] colors = Color.values();
         int randomIndex = getRandomFromRange(0, colors.length - 1);
         return colors[randomIndex];
-
-
     }
 
+    //Getteri
     public Color getColor() {
         return color;
     }
@@ -47,24 +48,28 @@ public class Auto {
     }
 
     public int getPrice() {
-
         return price;
     }
 
+    //Setteri
     public void setColor(Color color) {
         this.color = color;
     }
 
     public void setWeight(int weight) {
+        checkWeight(weight);
         this.weight = weight;
     }
 
     public void setPrice(int price) {
+        checkPrice(price);
         this.price = price;
-
     }
 
-    private void checkPrice(int ptrice) {
+
+    ////CHECKERI
+
+    private void checkPrice(int price) {
         if (price < MIN_PRICE || price > MAX_PRICE) {
             throw new IllegalArgumentException("invalid Price");
         }
