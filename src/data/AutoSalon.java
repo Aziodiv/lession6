@@ -25,7 +25,7 @@ public class AutoSalon {
     private static final int CAR_QUANTITY = 5;
     private static final double INTEREST = 0.2;
 
-    private Auto[] places;
+    private Auto[] places;//massiv mesto kazdoe mesto Auto
     private long balance;
 
 
@@ -37,7 +37,7 @@ public class AutoSalon {
 
 
 
-
+//zanositsa Auto
     public void buyAuto(Auto auto) {
         this.balance = this.balance - auto.getPrice();
         int freePlace = getFreePlace();
@@ -60,23 +60,50 @@ public class AutoSalon {
     }
 
 
-
-
-///////////////////
-    public Auto sellAuto() {
-        //TODO HOMEWORK
+    public Auto sellAuto(){
+        //TODO HW;
+        int finalPrice;
+        for (int i = 0; i < places.length; i++) {
+            if(places[i] != null){
+                finalPrice = (int)(places[i].getPrice() * getInterest());
+                System.out.println("The auto sold for " + finalPrice);
+                places[i] = null;
+                break;
+            }
+        }
         return null;
     }
 
-    public void prinReport(){
-
+    public Auto sellAutoByPlace(int place){
+        int finalPrice;
+        if(place < 0 || place > places.length){
+            System.out.println("Wrong place");
+        }
+        if(places[place] != null){
+            finalPrice = (int)(places[place].getPrice() * getInterest());
+            System.out.println("The auto sold for " + finalPrice);
+            this.balance =  this.balance + finalPrice;
+            places[place] = null;
+        }
+        return null;
     }
-    //TODO HW
-    //Place-price
 
+    private double  getInterest(){
+        return 1 + INTEREST;
+    }
 
-
-
-
+    public void printreport(){
+        //TODO HW;
+        //Place - Price
+        for (int i = 0; i < places.length; i++) {
+            if(places[i] != null){
+                System.out.print("[");
+                System.out.print(i + 1 + " - " + places[i].getPrice());
+                System.out.print("]");
+                System.out.println();
+            }
+        }
+        System.out.println("The balance is: " + this.balance);
+    }
 
 }

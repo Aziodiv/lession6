@@ -1,12 +1,12 @@
 package data;
 
-public class SimpleTriangle {
+public class SimpleTriangle extends Shape {
 
     private int a;
     private int b;
     private int c;
 
-    public SimpleTriangle(int a, int b, int c) {
+    public  SimpleTriangle(int a, int b, int c) {
         sidesCheck(a, b, c);
         this.a = a;
         this.b = b;
@@ -37,7 +37,8 @@ public class SimpleTriangle {
 
 
     //return this.a,this.b,this.c
-    public int getPerimetr() {
+    public double getPerimetr() {
+        System.out.println("hello Simple Triangle");
         return a + b + c;
     }
 
