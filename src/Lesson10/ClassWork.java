@@ -2,10 +2,13 @@ package Lesson10;
 
 import data.*;
 
-import javax.lang.model.util.SimpleElementVisitor6;
+import static utils.MyUtils.findMinPerimetr;
+import static utils.MyUtils.findmaxArea;
 
 public class ClassWork {
+
     public static void main(String[] args) {
+    /*
         Employee ivan = new Accounter(20_000, "Ivan", 50);
         Employee irina = new Accounter(30_000, "Irina", 60);
         Employee nikolai = new Accounter(60_000, "Nikolai", 30);
@@ -36,7 +39,7 @@ public class ClassWork {
             }
 
         }
-
+*/
         Shape triangle1 = new SimpleTriangle(9, 10, 7);
         Shape triangle2 = new SimpleTriangle(9, 10, 7);
         Shape triangle3 = new SimpleTriangle(9, 10, 7);
@@ -45,20 +48,17 @@ public class ClassWork {
         Shape square2 = new SimpleSquare(8);
         Shape square3 = new SimpleSquare(8);
 
-        Shape circle1 = new SipleCircle(9);
-        Shape circle2 = new SipleCircle(8);
-        Shape circle3 = new SipleCircle(10);
+        Shape circle1 = new SimpleCircle(9);
+        Shape circle2 = new SimpleCircle(8);
+        Shape circle3 = new SimpleCircle(10);
 
         Shape[] shapes = {triangle1, triangle2, triangle3, square1, square2, square3,
                 circle1,circle2,circle3};
-        Shape minPerimetr = shapes[0];
-        for (int i = 1; i < shapes.length; i++) {
-            Shape current = shapes[i];
-            if(current.getPerimetr()<minPerimetr.getPerimetr()){
-                minPerimetr=current;
-            }
-        }
-        System.out.println("min perimetr"+minPerimetr.getPerimetr());
+
+        findMinPerimetr(shapes);
+        System.out.println();
+        findmaxArea(shapes);
+
 
 
       /*

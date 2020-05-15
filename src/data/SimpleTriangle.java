@@ -14,8 +14,6 @@ public class SimpleTriangle extends Shape {
     }
 
 
-
-
     private void sidesCheck(int a, int b, int c) {
         if (a <= 0 || b <= 0 || c <= 0) {
             throw new IllegalArgumentException("Invalid sides combination!");
@@ -33,12 +31,17 @@ public class SimpleTriangle extends Shape {
     }
 
 
+    ////PLOWAD
+    public double getArea(){
+        //   System.out.println("hello SimpleTriangle area");
+        return (a*b)/2;
+    }
 
 
-
-    //return this.a,this.b,this.c
-    public double getPerimetr() {
-        System.out.println("hello Simple Triangle");
+    //ZDES BIL TRIANGLE PERIMETR
+    public double getPerimetr()
+    {
+        //   System.out.println("hello Simple Triangle");
         return a + b + c;
     }
 
@@ -66,6 +69,7 @@ public class SimpleTriangle extends Shape {
     public void setC(int c) {
         this.c = c;
     }
+
 
 
 }

@@ -1,5 +1,7 @@
 package utils;
 
+import data.Shape;
+
 public class MyUtils {
     private MyUtils() {
 
@@ -36,5 +38,45 @@ public class MyUtils {
     public static int getRandomFromRange(int left, int right) {
         return (int) (Math.random() * right - left) + left;
     }
+
+
+    //Naimensii perimetr figuri v iz massiva
+
+    public static void findMinPerimetr(Shape[]shapes){
+        Shape minPerimetr = shapes[0];
+        for (int i = 1; i < shapes.length; i++) {
+            Shape current = shapes[i];
+            if(current.getPerimetr()<minPerimetr.getPerimetr()){
+                minPerimetr=current;
+            }
+        }
+        System.out.println("min Perimetr: "+minPerimetr.getPerimetr());
+    }
+
+   //Naibolsaja  plowad  figuri
+
+    public static  void findmaxArea(Shape[]shapes){
+        Shape maxArea = shapes[0];
+        for (int i = 0; i <shapes.length ; i++) {
+            Shape current = shapes[i];
+            if(current.getArea()>maxArea.getArea());
+            maxArea=current;
+        }
+        System.out.println("max Area: "+ maxArea.getArea());
+    }
+
+    //Perimetr treugolnika
+    public static double getPerimetrTriangle(double a, double b, double c)
+    {//   System.out.println("hello Simple Triangle");
+        return a + b + c;
+    }
+
+    //Plowad treugolnika
+    public static double getAreaTriagle(double a, double b){
+        //   System.out.println("hello SimpleTriangle area");
+        return (a*b)/2;
+    }
 }
+
+
 
