@@ -2,7 +2,7 @@ package Lesson8;
 
 //import data.Car;
 import data.Person;
-import data.SimpleTriangle;
+import data.Shapes.SimpleTriangle;
 import data.Student;
 import enums.Month;
 

@@ -1,7 +1,7 @@
 package Lesson8;
 
 import data.Point;
-import data.Triangle;
+import data.Shapes.Triangle;
 
 public class HomeWork {
     public static void main(String[] args) {

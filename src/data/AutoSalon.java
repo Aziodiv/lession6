@@ -74,18 +74,19 @@ public class AutoSalon {
         return null;
     }
 
-    public Auto sellAutoByPlace(int place){
+    public void sellAutoByPlace(int place){
         int finalPrice;
-        if(place < 0 || place > places.length){
+        if(place < 0 || place >= places.length){
             System.out.println("Wrong place");
         }
         if(places[place] != null){
+                             //dostaju mawinu po index
             finalPrice = (int)(places[place].getPrice() * getInterest());
             System.out.println("The auto sold for " + finalPrice);
             this.balance =  this.balance + finalPrice;
             places[place] = null;
         }
-        return null;
+
     }
 
     private double  getInterest(){

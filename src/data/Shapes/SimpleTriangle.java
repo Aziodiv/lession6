@@ -1,4 +1,6 @@
-package data;
+package data.Shapes;
+
+import data.Shape;
 
 public class SimpleTriangle extends Shape {
 
@@ -70,6 +72,9 @@ public class SimpleTriangle extends Shape {
         this.c = c;
     }
 
-
+    @Override
+    public void methFromParrent() {
+        System.out.println("Triangle");
+    }
 
 }

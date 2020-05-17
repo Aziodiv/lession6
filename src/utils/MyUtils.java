@@ -36,7 +36,7 @@ public class MyUtils {
     }
 
     public static int getRandomFromRange(int left, int right) {
-        return (int) (Math.random() * right - left) + left;
+        return (int) (Math.random() * (right - left) + left);
     }
 
 

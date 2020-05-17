@@ -1,4 +1,4 @@
-package data;
+package data.Shapes;
 
 //Topic: Incapsulation
 //1. Read: Ekkel_RUS: 186-1206!!!!
@@ -10,6 +10,8 @@ package data;
 //Ispolzovat Incapsuljaciju!!!
 //4 * Dobavit v class Triangle validacijy (constructor, setters);
 
+
+import data.Point;
 
 public class Triangle {
 

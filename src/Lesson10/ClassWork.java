@@ -1,6 +1,9 @@
 package Lesson10;
 
 import data.*;
+import data.Shapes.SimpleCircle;
+import data.Shapes.SimpleSquare;
+import data.Shapes.SimpleTriangle;
 
 import static utils.MyUtils.findMinPerimetr;
 import static utils.MyUtils.findmaxArea;
@@ -56,7 +59,6 @@ public class ClassWork {
                 circle1,circle2,circle3};
 
         findMinPerimetr(shapes);
-        System.out.println();
         findmaxArea(shapes);
 
 

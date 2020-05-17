@@ -1,4 +1,6 @@
-package data;
+package data.Shapes;
+
+import data.Shape;
 
 public class SimpleCircle extends Shape {
     private int radius;
@@ -11,11 +13,18 @@ public class SimpleCircle extends Shape {
      //   System.out.println("hello Simple SimpleCircle");
         return 2 * Math.PI * radius;
     }
+
+
+
     public double getArea(){
      //   System.out.println("hello Simple SimpleCircle Area ");
         return Math.PI * (radius * radius);
-    }
 
+    }
+    @Override
+    public void methFromParrent() {
+        System.out.println("Circle");
+    }
 }
 
 

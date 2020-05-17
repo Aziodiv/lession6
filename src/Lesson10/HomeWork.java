@@ -2,6 +2,9 @@ package Lesson10;
 
 
 import data.*;
+import data.Shapes.SimpleCircle;
+import data.Shapes.SimpleSquare;
+import data.Shapes.SimpleTriangle;
 
 import static utils.MyUtils.*;
 
