@@ -10,7 +10,7 @@ public class Manager extends Worker {
 
     @Override
     public void salaryReview() {
-        this.salary=this.salary*(750*12);
+        this.salary=this.salary+(750*12);
     }
 
     public String getTeam() {

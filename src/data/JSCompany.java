@@ -42,4 +42,55 @@ public class JSCompany {
         }
         System.out.println();
     }
+
+    /////////////MAKSIMALNAJA POLUCKA
+    public Worker maxSalary() {
+        Worker biggestSalary = workers[0];
+        int index = 1;
+        while (index < workers.length) {
+            if (workers[index].getSalary() > biggestSalary.getSalary()) {
+                biggestSalary = workers[index];
+            }
+            index++;
+        }
+        return biggestSalary;
+    }
+
+    /////////////MINIMALNAJA POLUCKA
+    public Worker minSalary() {
+        Worker minimumSalary = workers[0];
+        int index = 1;
+        while (index < workers.length) {
+            if (workers[index].getSalary() < minimumSalary.getSalary()) {
+                minimumSalary = workers[index];
+            }
+            index++;
+        }
+        return minimumSalary;
+    }
+
+    public void newReport() {
+        for (int i = 0; i < workers.length; i++) {
+            Worker worker = workers[i];
+            String format = String.format("Name %s, Lastname %s, Salary %d",
+                    workers[i].getFirstName(), worker.getLastName(), worker.getSalary());
+            System.out.println(format);
+
+        }
+        System.out.println();
+    }
+// STARII RABOTNIK
+    public Worker getOldesttWorker() {
+        Worker oldest = workers[0];
+        int index = 1;
+        while (index < workers.length) {
+            if (workers[index].getAge() > oldest.getAge()) {
+                oldest = workers[index];
+            }
+            index++;
+        }
+        return oldest;
+    }
+
+
 }
