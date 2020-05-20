@@ -8,7 +8,10 @@ public class Worker {
     protected int age;
     protected long salary;
 
-
+public String toString(){
+    return " First name= "+firstName+" Lastname= "+
+            lastName+" Age= "+age+" Salary= "+salary;
+}
 
     public Worker(String firstName, String lastName) {
         this(firstName,

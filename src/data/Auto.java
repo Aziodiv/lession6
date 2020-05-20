@@ -6,6 +6,7 @@ import static utils.MyUtils.getRandomFromRange;
 
 public class Auto {
 
+
     private static final int MIN_WEIGHT = 1200;
     private static final int MAX_WEIGHT = 2500;
 
@@ -81,6 +82,31 @@ public class Auto {
             throw new IllegalArgumentException("invalid weight");
         }
 
+    }
+
+    public boolean equals(Object object) {
+        if (this == object) {
+            return true;
+        }
+
+        if (object instanceof Auto) {
+            Auto objectNew = (Auto) object;
+            if (objectNew.getColor() != color) {
+                return false;
+            }
+            if (objectNew.getWeight() != weight) {
+                return false;
+            }
+            if (objectNew.getPrice() != price) {
+                return false;
+            }
+            return true;
+        }
+        return false;
+    }
+
+    public String toString(){
+        return " Color= "+color +",Weight= "+weight+",Price="+price;
     }
 
 }

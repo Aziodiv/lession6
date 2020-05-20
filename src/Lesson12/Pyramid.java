@@ -12,6 +12,43 @@ public class Pyramid implements Figure {
         this.h = h;
     }
 
+    public boolean equals(Object object) {
+        if (this == object) {
+            return true;
+        }
+        if (!(object instanceof Pyramid)) {
+            return false;
+        }
+        Pyramid newObject = (Pyramid) object;
+
+
+        if (newObject.getL() != l) {
+            return false;
+        }
+
+        if (newObject.getH() != h) {
+            return false;
+        }
+
+        if (newObject.getW() != w) {
+            return false;
+        }
+        return true;
+
+    }
+
+    public double getL() {
+        return l;
+    }
+
+    public double getW() {
+        return w;
+    }
+
+    public double getH() {
+        return h;
+    }
+
     @Override
     public double getVolume() {
         return (l * w * h) / 3;

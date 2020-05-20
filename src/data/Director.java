@@ -19,4 +19,8 @@ public class Director extends Worker {
         return departament;
 
     }
+
+    public String toString(){
+        return "Director { departament = " + departament+","+ super.toString();
+    }
 }
