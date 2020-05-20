@@ -35,8 +35,9 @@ public class JSCompany {
     public void companyReport() {
         for (int i = 0; i < workers.length; i++) {
             Worker worker = workers[i];
-            String format = String.format("Name %s, Lastname %s, Salary %d",
-                    workers[i].getFirstName(), worker.getLastName(), worker.getSalary());
+            ///+professija
+            String format = String.format("Name %s, Lastname %s, Salary %d Age %d Position ",
+                    workers[i].getFirstName(), worker.getLastName(), worker.getSalary(), worker.getAge());
             System.out.println(format);
 
         }
@@ -69,16 +70,6 @@ public class JSCompany {
         return minimumSalary;
     }
 
-    public void newReport() {
-        for (int i = 0; i < workers.length; i++) {
-            Worker worker = workers[i];
-            String format = String.format("Name %s, Lastname %s, Salary %d",
-                    workers[i].getFirstName(), worker.getLastName(), worker.getSalary());
-            System.out.println(format);
-
-        }
-        System.out.println();
-    }
 // STARII RABOTNIK
     public Worker getOldesttWorker() {
         Worker oldest = workers[0];
