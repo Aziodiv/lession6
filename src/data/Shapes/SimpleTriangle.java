@@ -1,14 +1,14 @@
 package data.Shapes;
 
-import data.Shape;
+import data.Interfaces.Shape;
 
-public class SimpleTriangle extends Shape {
+public class SimpleTriangle implements Shape {
 
     private int a;
     private int b;
     private int c;
 
-    public  SimpleTriangle(int a, int b, int c) {
+    public SimpleTriangle(int a, int b, int c) {
         sidesCheck(a, b, c);
         this.a = a;
         this.b = b;
@@ -34,15 +34,14 @@ public class SimpleTriangle extends Shape {
 
 
     ////PLOWAD
-    public double getArea(){
+    public double getArea() {
         //   System.out.println("hello SimpleTriangle area");
-        return (a*b)/2;
+        return (a * b) / 2;
     }
 
 
     //ZDES BIL TRIANGLE PERIMETR
-    public double getPerimetr()
-    {
+    public double getPerimetr() {
         //   System.out.println("hello Simple Triangle");
         return a + b + c;
     }
@@ -72,9 +71,9 @@ public class SimpleTriangle extends Shape {
         this.c = c;
     }
 
+
     @Override
     public void methFromParrent() {
         System.out.println("Triangle");
     }
-
 }

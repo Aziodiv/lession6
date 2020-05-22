@@ -1,4 +1,4 @@
-package data;
+package data.Interfaces;
 
 import java.io.Serializable;
 

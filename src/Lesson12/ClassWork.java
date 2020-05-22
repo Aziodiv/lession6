@@ -1,7 +1,7 @@
 package Lesson12;
 
 import data.ConstructorExample;
-import data.InterfaceExample;
+import data.Interfaces.InterfaceExample;
 
 public class ClassWork {
     public static void main(String[] args) {

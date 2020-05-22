@@ -1,6 +1,6 @@
 package utils;
 
-import data.Shape;
+import data.Interfaces.Shape;
 
 public class MyUtils {
     private MyUtils() {
@@ -40,9 +40,10 @@ public class MyUtils {
     }
 
 
+
     //Naimensii perimetr figuri v iz massiva
 
-    public static void findMinPerimetr(Shape[]shapes){
+    public static void findMinPerimetr(Shape[] shapes){
         Shape minPerimetr = shapes[0];
         for (int i = 1; i < shapes.length; i++) {
             Shape current = shapes[i];
@@ -55,7 +56,7 @@ public class MyUtils {
 
    //Naibolsaja  plowad  figuri
 
-    public static  void findmaxArea(Shape[]shapes){
+    public static  void findmaxArea(Shape[] shapes){
         Shape maxArea = shapes[0];
         for (int i = 0; i <shapes.length ; i++) {
             Shape current = shapes[i];

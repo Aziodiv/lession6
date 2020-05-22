@@ -1,8 +1,9 @@
 package data.Shapes;
 
-import data.Shape;
 
-public class SimpleSquare extends Shape {
+import data.Interfaces.Shape;
+
+public class SimpleSquare implements Shape {
 
     private int a;
 
@@ -26,4 +27,6 @@ public class SimpleSquare extends Shape {
         System.out.println("Square");
 
     }
+
+
 }

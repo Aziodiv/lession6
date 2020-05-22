@@ -18,6 +18,11 @@ public class ClassWork11 {
         Developer dev2 = new Developer("Jorsh", "Kovboi", 40, 12_000, "Soome");
 
 
+
+
+
+
+
         Worker[] workers = {dir1, dir2, man1, man2, dev1, dev2};
         JSCompany company = new JSCompany(workers);
         System.out.println(company.getYoungestWorker().getAge());
@@ -35,5 +40,6 @@ public class ClassWork11 {
         System.out.println(company.maxSalary().getFirstName()+" "+ company.maxSalary().getLastName()+
                 " has a max salary among the Company. Salary: "+company.maxSalary().getSalary());
     }
+
 }
 

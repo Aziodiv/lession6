@@ -1,8 +1,9 @@
 package data.Shapes;
 
-import data.Shape;
+import data.Interfaces.Shape;
 
-public class SimpleCircle extends Shape {
+
+public class SimpleCircle implements Shape {
     private int radius;
 
     public SimpleCircle(int radius) {

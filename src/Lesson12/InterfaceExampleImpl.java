@@ -1,6 +1,6 @@
 package Lesson12;
 
-import data.InterfaceExample;
+import data.Interfaces.InterfaceExample;
 
 public class InterfaceExampleImpl implements InterfaceExample {
 

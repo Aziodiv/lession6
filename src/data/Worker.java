@@ -14,8 +14,7 @@ public String toString(){
 }
 
     public Worker(String firstName, String lastName) {
-        this(firstName,
-                lastName,getRandomFromRange(10000,20000));
+        this(firstName, lastName,getRandomFromRange(10000,20000));
     }
 
     public Worker(String firstName, String lastName, long salary) {

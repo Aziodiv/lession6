@@ -1,6 +1,6 @@
 package Lesson10;
 
-import data.*;
+import data.Interfaces.Shape;
 import data.Shapes.SimpleCircle;
 import data.Shapes.SimpleSquare;
 import data.Shapes.SimpleTriangle;
