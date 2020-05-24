@@ -1,6 +1,5 @@
 package Lession13;
 
-import data.Worker;
 
 import static utils.MyUtils.getRandomFromRange;
 
@@ -12,7 +11,7 @@ public class Pet {
 
 
     public Pet() {
-        this(getRandomFromRange(1,20),Name.REKS,getRandomFromRange(1,100));
+        this(getRandomFromRange(1, 20), Name.REKS, getRandomFromRange(1, 100));
         checkAge();
 
     }
@@ -23,8 +22,6 @@ public class Pet {
         this.weight = weight;
         checkAge();
     }
-
-
 
 
     public int getAge() {
@@ -40,8 +37,6 @@ public class Pet {
     }
 
 
-
-
     ///CHECK AGE
     public static int MINAGE = 1;
     public static int MAXAGE = 20;
@@ -52,22 +47,9 @@ public class Pet {
         }
     }
 
-    public String toString(){
-        return "Pet name: "+name+", Pet age: "+age+", Pet weight: "+weight;
+    public String toString() {
+        return "Pet name: " + name + ", Pet age: " + age + ", Pet weight: " + weight;
     }
-
-
-    public Pet getPetQuantity() {
-        Pet petQuanty = pets[0];
-        int index = 1;
-        for (int i = 0; i < workers.length; i++) {
-            Worker worker = workers[i];
-        }
-    }
-
-
-
-
 
 
 }

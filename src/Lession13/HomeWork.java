@@ -1,5 +1,7 @@
 package Lession13;
 
+
+
 public class HomeWork {
     public static void main(String[] args) {
         Pet pet1 =new Pet (20,Name.CHAPI,30);
@@ -10,9 +12,8 @@ public class HomeWork {
 
         System.out.println(pet1);
         System.out.println(pet4);
+
     }
-
-
 
 }
 
