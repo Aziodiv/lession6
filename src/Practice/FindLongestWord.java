@@ -21,37 +21,52 @@ package Practice;
 public class FindLongestWord {
 
     public static void main(String[] args) {
-        String str1 = "privet kak dela";
-        System.out.println(LongestWord(str1));
-        System.out.println(findLongestWordLength(str1));
+        String str1 = "privet kak dela u tebja, eto TESTIROVANIE";
+        StartsAndEndsLetter(str1);
+        System.out.println();
+        System.out.println("[For] samoe korotkoe slovo: " +findLongestWordLength(str1));
+        LongestWord(str1);
     }
 
 
-    ///For each//////
-    public static int LongestWord(String sentence) {
+    //For each POISK DLINNOGO SLOVA
+    public static void LongestWord(String sentence) {
         String[] words = sentence.split(" ");
-        int length = 0;
-//=>>
+        String str = " ";
         for (String word : words) {
-            if (length < word.length()) {
-                length = word.length();
-            }
+            if (word.length() > str.length())
+                str = word;
         }
-        return length;
+        System.out.println("[For each] samoe dlinnoe slovo: "+ str);
+
     }
 
-    ///poisk 4erez  FOR//////
-    public static int findLongestWordLength(String sentence) {
 
-        int maxLength = 0;
+    ///poisk 4erez  FOR KOROTKOE  SLOVO//////
+    public static String findLongestWordLength(String sentence) {
+
         String[] words = sentence.split(" ");
-        for (int i = 0; i < words.length; i++) {
-            if (words[i].length() > maxLength) {
-                maxLength = words[i].length();
+        String minLength = words[0];
+        for (int i = 1; i < words.length; i++) {
+            if (words[i].length() < minLength.length()) {
+                minLength = words[i];
             }
         }
+        return minLength;
+    }
 
-        return maxLength;
+
+
+    public static void StartsAndEndsLetter(String sentence) {
+        String[] words = sentence.split(" ");
+        String maxLenght = words[0];
+        for (int i = 0; i < words.length; i++) {
+            if (words[i].startsWith("a")==maxLenght.startsWith("a"));
+
+        }
+
     }
 
 }
+
+

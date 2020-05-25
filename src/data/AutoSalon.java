@@ -38,12 +38,14 @@ public class AutoSalon {
 
 
 //zanositsa Auto
-    public void buyAuto(Auto auto) {
+    public void buyAuto(Auto auto)throws Exception {
         this.balance = this.balance - auto.getPrice();
         int freePlace = getFreePlace();
         if (freePlace < 0) {
-            System.out.println("No free places, sell Auto");
-            return;
+            throw new Exception("No free places, sell Auto");
+
+            //System.out.println("No free places, sell Auto");
+            //return;
         }
         places[0] = auto;
     }
