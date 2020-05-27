@@ -76,4 +76,13 @@ public class SimpleTriangle implements Shape {
     public void methFromParrent() {
         System.out.println("Triangle");
     }
+
+    @Override
+    public String toString() {
+        return "SimpleTriangle{" +
+                "a=" + a +
+                ", b=" + b +
+                ", c=" + c +
+                '}';
+    }
 }

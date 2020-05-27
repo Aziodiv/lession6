@@ -23,6 +23,13 @@ public class SimpleSquare implements Shape {
     }
 
     @Override
+    public String toString() {
+        return "SimpleSquare{" +
+                "a=" + a +
+                '}';
+    }
+
+    @Override
     public void methFromParrent() {
         System.out.println("Square");
 

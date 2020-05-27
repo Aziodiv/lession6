@@ -26,6 +26,13 @@ public class SimpleCircle implements Shape {
     public void methFromParrent() {
         System.out.println("Circle");
     }
+
+    @Override
+    public String toString() {
+        return "SimpleCircle{" +
+                "radius=" + radius +
+                '}';
+    }
 }
 
 

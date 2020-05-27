@@ -43,6 +43,9 @@ public class ClassWork {
 
         }
 */
+
+
+
         Shape triangle1 = new SimpleTriangle(9, 10, 7);
         Shape triangle2 = new SimpleTriangle(9, 10, 7);
         Shape triangle3 = new SimpleTriangle(9, 10, 7);
@@ -56,7 +59,7 @@ public class ClassWork {
         Shape circle3 = new SimpleCircle(10);
 
         Shape[] shapes = {triangle1, triangle2, triangle3, square1, square2, square3,
-                circle1,circle2,circle3};
+                circle1, circle2, circle3};
 
         findMinPerimetr(shapes);
         findmaxArea(shapes);
