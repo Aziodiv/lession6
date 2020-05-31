@@ -4,7 +4,7 @@ import data.Auto;
 import data.AutoSalon;
 import enums.Color;
 
-public class ClassWork {
+public class ClassWork extends Auto {
     public static void main(String[] args)throws Exception {
         Auto bmw = new Auto();
         Auto toyota = new Auto(Color.RED, 1500, 25000);
@@ -13,7 +13,6 @@ public class ClassWork {
         Auto volvo = new Auto(Color.RED, 1700, 8000);
 
         AutoSalon salon = new AutoSalon(500000l);
-
 
 
         salon.buyAuto(bmw);
@@ -26,4 +25,5 @@ public class ClassWork {
         salon.printreport();
         System.out.println();
     }
+
 }

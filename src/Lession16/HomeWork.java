@@ -158,7 +158,6 @@ public class HomeWork {
 //18. Write a Java program to test an array list is empty or not
         System.out.println("Colors: " + colors.isEmpty());
         System.out.println("Colors2: " + colors2.isEmpty());
-if (colo)
 
     }
 }

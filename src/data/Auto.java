@@ -2,9 +2,11 @@ package data;
 
 import enums.Color;
 
+import java.util.Set;
+
 import static utils.MyUtils.getRandomFromRange;
 
-public class Auto {
+public class Auto implements Comparable<Auto> {
 
 
     private static final int MIN_WEIGHT = 1200;
@@ -105,8 +107,20 @@ public class Auto {
         return false;
     }
 
-    public String toString(){
-        return " Color= "+color +",Weight= "+weight+",Price="+price;
+    public String toString() {
+        return "\nColor= " + color + ",Weight= " + weight + ",Price=" + price;
     }
 
+////PRIVATNII METHOD
+
+    private String getPrivatePrice() {
+       return "Pirce";
+    }
+
+
+
+    @Override
+    public int compareTo(Auto o) {
+        return this.price -o.getPrice();
+    }
 }
