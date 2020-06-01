@@ -2,6 +2,7 @@ package data;
 
 import enums.Color;
 
+import java.util.Objects;
 import java.util.Set;
 
 import static utils.MyUtils.getRandomFromRange;
@@ -108,7 +109,7 @@ public class Auto implements Comparable<Auto> {
     }
 
     public String toString() {
-        return "\nColor= " + color + ",Weight= " + weight + ",Price=" + price;
+        return "Color= " + color + ",Weight= " + weight + ",Price=" + price;
     }
 
 ////PRIVATNII METHOD
@@ -122,5 +123,10 @@ public class Auto implements Comparable<Auto> {
     @Override
     public int compareTo(Auto o) {
         return this.price -o.getPrice();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(color, weight, price);
     }
 }
