@@ -1,5 +1,6 @@
 package data;
 
+import data.Interfaces.Shape;
 import enums.Color;
 
 import java.util.Objects;
@@ -17,7 +18,12 @@ public class Auto implements Comparable<Auto> {
     private static final int MAX_PRICE = 100000;
 
     private Color color;
+    @MaxValue(MAX_WEIGHT)
+    @MinValue(MIN_WEIGHT)
     private int weight;
+
+    @MaxValue(MAX_PRICE)
+    @MinValue(MIN_PRICE)
     private int price;
 
 
@@ -28,8 +34,8 @@ public class Auto implements Comparable<Auto> {
     }
 
     public Auto(Color color, int weight, int price) {
-        checkWeight(weight);
-        checkPrice(price);
+ /*       checkWeight(weight);
+        checkPrice(price);*/
         this.color = color;
         this.weight = weight;
         this.price = price;
@@ -60,7 +66,7 @@ public class Auto implements Comparable<Auto> {
         this.color = color;
     }
 
-    public void setWeight(int weight) {
+/*    public void setWeight(int weight) {
         checkWeight(weight);
         this.weight = weight;
     }
@@ -68,25 +74,25 @@ public class Auto implements Comparable<Auto> {
     public void setPrice(int price) {
         checkPrice(price);
         this.price = price;
-    }
+    }*/
 
 
     ////CHECKERI
 
-    private void checkPrice(int price) {
+/*    private void checkPrice(int price) {
         if (price < MIN_PRICE || price > MAX_PRICE) {
             throw new IllegalArgumentException("invalid Price");
         }
 
-    }
+    }*/
 
-    private void checkWeight(int weight) {
+ /*   private void checkWeight(int weight) {
         if (weight < MIN_WEIGHT || weight > MAX_WEIGHT) {
             throw new IllegalArgumentException("invalid weight");
         }
 
     }
-
+*/
     public boolean equals(Object object) {
         if (this == object) {
             return true;
