@@ -66,7 +66,7 @@ public class ClassWork {
         }
 
         SimpleCircle[] circles = {new SimpleCircle(10), new SimpleCircle(20)};
-        MyContainer<SimpleCircle> circlesContainer = new MyContainerImpl(autos);
+        MyContainer<SimpleCircle> circlesContainer = new MyContainerImpl<SimpleCircle>(circles);
         MyIterator<SimpleCircle> iteratorC = circlesContainer.iterator();
         while (iteratorC.hasNext()) {
             SimpleCircle circle = iteratorC.next();

@@ -12,11 +12,11 @@ public class MyContainerImpl<T> implements MyContainer {
 
 
     @Override
-    public MyIterator iterator() {
+    public MyIterator<T> iterator() {
         return new MyIteratorImpl();
     }
 
-    private class MyIteratorImpl implements MyIterator {
+    private class MyIteratorImpl implements MyIterator<T> {
 
         private int i = 0;
 
